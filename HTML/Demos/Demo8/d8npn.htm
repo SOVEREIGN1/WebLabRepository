@@ -1,0 +1,130 @@
+<html>
+<head>
+<!--
+   HTML:demo8 - JavaScript
+   Author: LV
+   Date: August 2005
+
+   Filename:         d8npn.htm
+   Supporting files: d8bells.jpg, d8logo.jpg, d8styles.css, d8watkins.jpg
+-->
+<title>North Pole Novelties</title>
+<link href="d8styles.css" rel="stylesheet" type="text/css" />
+<script src="d8library.js" type="text/javascript"></script>
+</head>
+
+<body>
+<table id="npn" cellpadding="5" cellspacing="0">
+<tr>
+<!-- Company Hyperlinks -->
+<td id="links" rowspan="4" valign="top">
+   <a href="#">Home Page</a>
+   <a href="#">Shopping Cart</a>
+   <a href="#">Your Account</a>
+   <a href="#">Contact Us</a>
+   <a href="#" class="newgroup">Angels</a>
+   <a href="#">Cards</a>
+   <a href="#">Collectibles</a>
+   <a href="#">Creches</a>
+   <a href="#">Garland</a>
+   <a href="#">Gift Wraps</a>
+   <a href="#">Lights</a>
+   <a href="#">Nutcrackers</a>
+   <a href="#">Ornaments</a>
+   <a href="#">Santas</a>
+   <a href="#">Trains</a>
+   <a href="#">Trees</a>
+   <a href="#">Villages</a>
+   <a href="#">Wreaths</a>
+</td>
+
+<!-- Days until Christmas -->
+<td id="daycell">
+   <script type="text/javascript">
+   	var Today = new Date();
+   	var ThisDay = Today.getDate();
+   	var ThisMonth = Today.getMonth()+1;
+   	var ThisYear = Today.getFullYear();
+   	var DaysLeft = XmasDays(Today);
+   	var MonthTxt = new Array("", "January", "February", "March", "April", "May", "June", "July", "August",
+   								"September", "October", "November", "December");
+
+   	document.write("Today is " + MonthTxt[ThisMonth] + " " + ThisDay + ", " + ThisYear + "<br />");
+   	if (DaysLeft > 0)
+   	{
+   		document.write("Only " + DaysLeft + " days until Christmas");
+   	}
+   	else
+   	{
+   		document.write("Happy Holidays from North Pole Novelties");
+   	}
+   </script>
+
+</td>
+</tr>
+
+<tr>
+<!-- Company Logo -->
+<td id="logo">
+   <img src="d8logo.jpg" alt="North Pole Novelties" />
+</td>
+</tr>
+
+<tr>
+<!-- Articles about the company -->
+<td>
+   <table cellspacing="4" cellpadding="4">
+   <tr>
+   <!-- Welcome message -->
+   <td id="firstcol" valign="top">
+      <p class="firstp"><img src="d8bells.jpg" alt="" style="float: left" />
+      Welcome to our online store. Consider us your complete holiday
+      store. Whether you're a collector or simply looking for a beautiful
+      piece to treasure for years, you'll find it at NPN. Please click on
+      one of the many links to explore all we have to offer.</p>
+
+   <!-- Latest news -->
+      <h3>News Flash!</h3>
+      <p>North Pole Novelties is proud to announce a new line of
+      <b>Lasseter Old Towne Village collectible houses</b>.
+      Start building your collection of these wonderful miniature
+      porcelain houses and shops. </p>
+      <p>Each model has accessories to enhance the collection. Be sure to
+      order extra trees, fences, street lights and signs to bring activity
+      and a festive atmosphere to your miniature town.</p>
+   </td>
+
+   <!-- Information about the company -->
+   <td id="secondcol" valign="top">
+      <h3>Who Are We?</h3>
+      <p>
+      <img src="d8watkins.jpg" alt="" style="float: right; margin: 0px 0px 15px 15px" />
+      Located in Seton Grove, Minnesota, North Pole Novelties is one of the
+      oldest and largest holiday stores in the country. The store was founded
+      in 1968 by <b>David Watkins</b> (shown here). Today, David, his family,
+      and over 300 employees manage the daily operation of making the holiday
+      season last all year.</p>
+      <p>The store itself is the size of two football fields and attracts
+      visitors from around the world. If you can't pay us a visit, order our
+      catalogue. We will deliver to any spot in the United States and
+      overseas. In a rush? We can deliver your order overnight! We also
+      gift wrap.</p>
+   </td>
+   </tr>
+   </table>
+</td>
+</tr>
+
+<tr>
+<!-- Contact Information -->
+<td id="contact">
+   <b>North Pole Novelties</b> |
+   25 Oakdale Avenue |
+   Seton Grove, MN 53112 |
+   (404) 555-1225
+</td>
+</tr>
+</table>
+
+</body>
+</html>

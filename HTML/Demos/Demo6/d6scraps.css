@@ -1,0 +1,16 @@
+/* Online Scrapbooks screen styles */
+body {color: brown}
+h1, h2, h3, h4, h5, h6 {font-family: sans-serif; color: orange}
+address {color: orange; font-style: normal; font-variant: small-caps;
+		text-align: center; clear: both; border-top: 1px solid orange}
+#head {text-align: right; border-bottom: 1px solid green}
+#links {width: 150px; float: left; background-color: rgb(212, 142, 0); 
+		margin-right: 10px; padding: 10px; border-width: 2px;
+		border-style: solid; border-color: black}
+#links a {display: block; font-family: sans-serif; color: white; font-size: 9pt}
+#links a:link {text-decoration: none}
+#links a:visited {text-decoration: none}
+#links a:hover {color: black; text-decoration: underline}
+#links a:active {text-decoration: none}
+#links a.newgroup {margin-top: 15px}
+#main {width: 70%; float: left; border-left: 1px solid orange; padding-left: 10px}
